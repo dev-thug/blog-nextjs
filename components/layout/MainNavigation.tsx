@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Logo from './Logo';
+import classes from './main-navigation.module.css';
 
 const MainNavigation = () => {
   return (
-    <header>
+    <header className={classes.header}>
       <Link href={'/'} legacyBehavior>
         <a>
           <Logo />
